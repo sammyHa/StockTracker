@@ -3,14 +3,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.AddFragment">
-
-    <TextView
-        android:layout_width="wrap_content"
+    tools:context=".fragments.AddFragment"
+    android:background="@color/bg_color"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Home Fragment"
-        android:layout_gravity="center_horizontal|center_vertical"
-        android:textSize="34sp"
-        />
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:background="@drawable/add_style">
+
+
+        <EditText
+            android:id="@+id/search_ticker"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:hint="Search ticker"
+            android:textColorHint="@color/uncheck_icon"
+            android:background="#00000000"
+            android:inputType="textCapCharacters"
+            android:maxLength="7"
+
+            />
+        <View
+            android:background="@color/checked_icon"
+            android:layout_width="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/trade_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="40dp"
+            android:textColor="@color/white"
+            android:inputType="date"
+            android:hint="Traded date"
+            android:textColorHint="@color/uncheck_icon"
+            android:background="#00000000"
+            android:maxLength="10"
+            android:layout_toRightOf="@id/search_ticker"
+            />
+
+
+
+    </LinearLayout>
+
+
 
 </FrameLayout>

@@ -2,18 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/home"
+        android:id="@+id/homeFragment"
         android:icon="@mipmap/chart_area_blue"
         android:title=" "
 
         />
     <item
-        android:id="@+id/add"
+        android:id="@+id/addFragment"
         android:icon="@mipmap/add_gray"
         android:title=" "
         />
     <item
-        android:id="@+id/profile"
+        android:id="@+id/profileFragment"
         android:icon="@mipmap/user_gray"
         android:title=" "
         />
